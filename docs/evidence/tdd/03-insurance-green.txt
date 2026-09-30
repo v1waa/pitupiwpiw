@@ -1,0 +1,10 @@
+  Lab2.Core -> <repository>/Lab2.Core/bin/Debug/net8.0/Lab2.Core.dll
+  Lab2.Tests -> <repository>/Lab2.Tests/bin/Debug/net8.0/Lab2.Tests.dll
+Test run for <repository>/Lab2.Tests/bin/Debug/net8.0/Lab2.Tests.dll (.NETCoreApp,Version=v8.0)
+VSTest version 17.11.1 (x64)
+
+Starting test execution, please wait...
+A total of 1 test files matched the specified pattern.
+Results File: <repository>/artifacts/tdd/03-insurance-green/results.trx
+
+Passed!  - Failed:     0, Passed:    64, Skipped:     0, Total:    64, Duration: 29 ms - Lab2.Tests.dll (net8.0)

@@ -45,6 +45,9 @@ public sealed class DeliveryCalculator
         if (request.IsFragile)
             total *= 1.15m;
 
+        if (request.IsInsured && request.DeclaredValue > 0m)
+            total += Math.Max(100m, request.DeclaredValue * 0.02m);
+
         return total;
     }
 }
