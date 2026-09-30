@@ -1,0 +1,12 @@
+[
+  {
+    "stage": "00-setup",
+    "expected": "green",
+    "total": 1,
+    "passed": 1,
+    "failed": 0,
+    "exit_code": 0,
+    "valid": true,
+    "command": "dotnet test Lab2.sln --no-restore --logger trx"
+  }
+]
