@@ -11,7 +11,8 @@
 - `Lab2.Tests` — xUnit, FluentAssertions, AAA, `[Fact]`, `[Theory]`, `[InlineData]`.
 - [Матрица сценариев](docs/test-matrix.md).
 - [Этапы TDD](docs/tdd-history.md) и [результаты запусков](docs/evidence/tdd-runs.json).
-- [Отчёт Word](docs/Lab2_Delivery_Report.docx) — все требуемые разделы и настоящие скриншоты покрытия; титульный лист с полями для самостоятельного заполнения.
+- [Основной отчёт Word](docs/Lab2_Delivery_Report.docx) и три дополнительных: [отчёт 2](docs/Lab2_Delivery_Report_2.docx), [отчёт 3](docs/Lab2_Delivery_Report_3.docx), [отчёт 4](docs/Lab2_Delivery_Report_4.docx). В каждом есть все требуемые разделы, листинги и настоящие скриншоты покрытия. Исходники и результаты общие; формулировки анализа различаются. Титульные листы перенесены из предоставленного образца КНИТУ-КАИ, колледжа «КИТ»; ФИО студента и группа оставлены для заполнения.
+- [Проверка выполнения методички](docs/requirements-checklist.md) — требования, результаты и ссылки на подтверждения.
 - `docs/coverage/final/index.html` — готовый HTML-отчёт ReportGenerator. Скачайте репозиторий и откройте файл локально.
 - `docs/coverage/intermediate/index.html` — промежуточный анализ отдельной группы валидации.
 - `docs/evidence` — скриншоты, XML покрытия, итоговый TRX и журналы TDD.
