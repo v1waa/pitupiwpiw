@@ -8,5 +8,15 @@
     "exit_code": 0,
     "valid": true,
     "command": "dotnet test Lab2.sln --no-restore --logger trx"
+  },
+  {
+    "stage": "01-validation-red",
+    "expected": "red",
+    "total": 14,
+    "passed": 0,
+    "failed": 14,
+    "exit_code": 1,
+    "valid": true,
+    "command": "dotnet test Lab2.sln --no-restore --logger trx"
   }
 ]

@@ -1,0 +1,244 @@
+  Lab2.Core -> <repository>/Lab2.Core/bin/Debug/net8.0/Lab2.Core.dll
+  Lab2.Tests -> <repository>/Lab2.Tests/bin/Debug/net8.0/Lab2.Tests.dll
+Test run for <repository>/Lab2.Tests/bin/Debug/net8.0/Lab2.Tests.dll (.NETCoreApp,Version=v8.0)
+VSTest version 17.11.1 (x64)
+
+Starting test execution, please wait...
+A total of 1 test files matched the specified pattern.
+[xUnit.net 00:00:00.23]     Lab2.Tests.ValidationTests.CalculateCost_WithInvalidDistance_ThrowsArgumentException(distance: 5000.0100000000002) [FAIL]
+[xUnit.net 00:00:00.24]     Lab2.Tests.ValidationTests.CalculateCost_WithInvalidDistance_ThrowsArgumentException(distance: 0) [FAIL]
+[xUnit.net 00:00:00.24]     Lab2.Tests.ValidationTests.CalculateCost_WithInvalidDistance_ThrowsArgumentException(distance: -1) [FAIL]
+[xUnit.net 00:00:00.24]     Lab2.Tests.ValidationTests.CalculateCost_WithValidRangeBoundaries_ReturnsPositiveCost(distance: 5000, weight: 1000) [FAIL]
+[xUnit.net 00:00:00.24]     Lab2.Tests.ValidationTests.CalculateCost_WithValidRangeBoundaries_ReturnsPositiveCost(distance: 5000, weight: 0.01) [FAIL]
+[xUnit.net 00:00:00.24]     Lab2.Tests.ValidationTests.CalculateCost_WithValidRangeBoundaries_ReturnsPositiveCost(distance: 0.01, weight: 1000) [FAIL]
+[xUnit.net 00:00:00.24]     Lab2.Tests.ValidationTests.CalculateCost_WithValidRangeBoundaries_ReturnsPositiveCost(distance: 0.01, weight: 0.01) [FAIL]
+[xUnit.net 00:00:00.24]     Lab2.Tests.ValidationTests.CalculateCost_WithMinimalStandardDelivery_Returns200 [FAIL]
+[xUnit.net 00:00:00.25]     Lab2.Tests.ValidationTests.CalculateCost_WithUndefinedDeliveryType_ThrowsArgumentException(type: -1) [FAIL]
+  Failed Lab2.Tests.ValidationTests.CalculateCost_WithInvalidDistance_ThrowsArgumentException(distance: 5000.0100000000002) [72 ms]
+  Error Message:
+   Expected a <System.ArgumentException> to be thrown, but found <System.NotImplementedException>:
+System.NotImplementedException: The method or operation is not implemented.
+   at Lab2.Core.DeliveryCalculator.CalculateCost(DeliveryRequest request) in <repository>/Lab2.Core/DeliveryCalculator.cs:line 7
+   at Lab2.Tests.ValidationTests.<>c__DisplayClass1_0.<CalculateCost_WithInvalidDistance_ThrowsArgumentException>b__0() in <repository>/Lab2.Tests/ValidationTests.cs:line 32
+   at FluentAssertions.Specialized.ActionAssertions.InvokeSubject()
+   at FluentAssertions.Specialized.DelegateAssertions`2.InvokeSubjectWithInterception().
+  Stack Trace:
+     at FluentAssertions.Execution.XUnit2TestFramework.Throw(String message)
+   at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)
+   at FluentAssertions.Execution.DefaultAssertionStrategy.HandleFailure(String message)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(String message, Object[] args)
+   at FluentAssertions.Specialized.DelegateAssertionsBase`2.ThrowInternal[TException](Exception exception, String because, Object[] becauseArgs)
+   at FluentAssertions.Specialized.DelegateAssertions`2.Throw[TException](String because, Object[] becauseArgs)
+   at Lab2.Tests.ValidationTests.CalculateCost_WithInvalidDistance_ThrowsArgumentException(Double distance) in <repository>/Lab2.Tests/ValidationTests.cs:line 35
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+  Failed Lab2.Tests.ValidationTests.CalculateCost_WithInvalidDistance_ThrowsArgumentException(distance: 0) [1 ms]
+  Error Message:
+   Expected a <System.ArgumentException> to be thrown, but found <System.NotImplementedException>:
+System.NotImplementedException: The method or operation is not implemented.
+   at Lab2.Core.DeliveryCalculator.CalculateCost(DeliveryRequest request) in <repository>/Lab2.Core/DeliveryCalculator.cs:line 7
+   at Lab2.Tests.ValidationTests.<>c__DisplayClass1_0.<CalculateCost_WithInvalidDistance_ThrowsArgumentException>b__0() in <repository>/Lab2.Tests/ValidationTests.cs:line 32
+   at FluentAssertions.Specialized.ActionAssertions.InvokeSubject()
+   at FluentAssertions.Specialized.DelegateAssertions`2.InvokeSubjectWithInterception().
+  Stack Trace:
+     at FluentAssertions.Execution.XUnit2TestFramework.Throw(String message)
+   at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)
+   at FluentAssertions.Execution.DefaultAssertionStrategy.HandleFailure(String message)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(String message, Object[] args)
+   at FluentAssertions.Specialized.DelegateAssertionsBase`2.ThrowInternal[TException](Exception exception, String because, Object[] becauseArgs)
+   at FluentAssertions.Specialized.DelegateAssertions`2.Throw[TException](String because, Object[] becauseArgs)
+   at Lab2.Tests.ValidationTests.CalculateCost_WithInvalidDistance_ThrowsArgumentException(Double distance) in <repository>/Lab2.Tests/ValidationTests.cs:line 35
+   at InvokeStub_ValidationTests.CalculateCost_WithInvalidDistance_ThrowsArgumentException(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  Failed Lab2.Tests.ValidationTests.CalculateCost_WithInvalidDistance_ThrowsArgumentException(distance: -1) [< 1 ms]
+  Error Message:
+   Expected a <System.ArgumentException> to be thrown, but found <System.NotImplementedException>:
+System.NotImplementedException: The method or operation is not implemented.
+   at Lab2.Core.DeliveryCalculator.CalculateCost(DeliveryRequest request) in <repository>/Lab2.Core/DeliveryCalculator.cs:line 7
+   at Lab2.Tests.ValidationTests.<>c__DisplayClass1_0.<CalculateCost_WithInvalidDistance_ThrowsArgumentException>b__0() in <repository>/Lab2.Tests/ValidationTests.cs:line 32
+   at FluentAssertions.Specialized.ActionAssertions.InvokeSubject()
+   at FluentAssertions.Specialized.DelegateAssertions`2.InvokeSubjectWithInterception().
+  Stack Trace:
+     at FluentAssertions.Execution.XUnit2TestFramework.Throw(String message)
+   at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)
+   at FluentAssertions.Execution.DefaultAssertionStrategy.HandleFailure(String message)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(String message, Object[] args)
+   at FluentAssertions.Specialized.DelegateAssertionsBase`2.ThrowInternal[TException](Exception exception, String because, Object[] becauseArgs)
+   at FluentAssertions.Specialized.DelegateAssertions`2.Throw[TException](String because, Object[] becauseArgs)
+   at Lab2.Tests.ValidationTests.CalculateCost_WithInvalidDistance_ThrowsArgumentException(Double distance) in <repository>/Lab2.Tests/ValidationTests.cs:line 35
+   at InvokeStub_ValidationTests.CalculateCost_WithInvalidDistance_ThrowsArgumentException(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  Failed Lab2.Tests.ValidationTests.CalculateCost_WithValidRangeBoundaries_ReturnsPositiveCost(distance: 5000, weight: 1000) [< 1 ms]
+  Error Message:
+   System.NotImplementedException : The method or operation is not implemented.
+  Stack Trace:
+     at Lab2.Core.DeliveryCalculator.CalculateCost(DeliveryRequest request) in <repository>/Lab2.Core/DeliveryCalculator.cs:line 7
+   at Lab2.Tests.ValidationTests.CalculateCost_WithValidRangeBoundaries_ReturnsPositiveCost(Double distance, Double weight) in <repository>/Lab2.Tests/ValidationTests.cs:line 70
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+  Failed Lab2.Tests.ValidationTests.CalculateCost_WithValidRangeBoundaries_ReturnsPositiveCost(distance: 5000, weight: 0.01) [< 1 ms]
+  Error Message:
+   System.NotImplementedException : The method or operation is not implemented.
+  Stack Trace:
+     at Lab2.Core.DeliveryCalculator.CalculateCost(DeliveryRequest request) in <repository>/Lab2.Core/DeliveryCalculator.cs:line 7
+   at Lab2.Tests.ValidationTests.CalculateCost_WithValidRangeBoundaries_ReturnsPositiveCost(Double distance, Double weight) in <repository>/Lab2.Tests/ValidationTests.cs:line 70
+   at InvokeStub_ValidationTests.CalculateCost_WithValidRangeBoundaries_ReturnsPositiveCost(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  Failed Lab2.Tests.ValidationTests.CalculateCost_WithValidRangeBoundaries_ReturnsPositiveCost(distance: 0.01, weight: 1000) [< 1 ms]
+  Error Message:
+   System.NotImplementedException : The method or operation is not implemented.
+  Stack Trace:
+     at Lab2.Core.DeliveryCalculator.CalculateCost(DeliveryRequest request) in <repository>/Lab2.Core/DeliveryCalculator.cs:line 7
+   at Lab2.Tests.ValidationTests.CalculateCost_WithValidRangeBoundaries_ReturnsPositiveCost(Double distance, Double weight) in <repository>/Lab2.Tests/ValidationTests.cs:line 70
+   at InvokeStub_ValidationTests.CalculateCost_WithValidRangeBoundaries_ReturnsPositiveCost(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  Failed Lab2.Tests.ValidationTests.CalculateCost_WithValidRangeBoundaries_ReturnsPositiveCost(distance: 0.01, weight: 0.01) [< 1 ms]
+  Error Message:
+   System.NotImplementedException : The method or operation is not implemented.
+  Stack Trace:
+     at Lab2.Core.DeliveryCalculator.CalculateCost(DeliveryRequest request) in <repository>/Lab2.Core/DeliveryCalculator.cs:line 7
+   at Lab2.Tests.ValidationTests.CalculateCost_WithValidRangeBoundaries_ReturnsPositiveCost(Double distance, Double weight) in <repository>/Lab2.Tests/ValidationTests.cs:line 70
+   at InvokeStub_ValidationTests.CalculateCost_WithValidRangeBoundaries_ReturnsPositiveCost(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  Failed Lab2.Tests.ValidationTests.CalculateCost_WithMinimalStandardDelivery_Returns200 [< 1 ms]
+  Error Message:
+   System.NotImplementedException : The method or operation is not implemented.
+  Stack Trace:
+     at Lab2.Core.DeliveryCalculator.CalculateCost(DeliveryRequest request) in <repository>/Lab2.Core/DeliveryCalculator.cs:line 7
+   at Lab2.Tests.ValidationTests.CalculateCost_WithMinimalStandardDelivery_Returns200() in <repository>/Lab2.Tests/ValidationTests.cs:line 101
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+  Failed Lab2.Tests.ValidationTests.CalculateCost_WithUndefinedDeliveryType_ThrowsArgumentException(type: -1) [1 ms]
+  Error Message:
+   Expected a <System.ArgumentException> to be thrown, but found <System.NotImplementedException>:
+System.NotImplementedException: The method or operation is not implemented.
+   at Lab2.Core.DeliveryCalculator.CalculateCost(DeliveryRequest request) in <repository>/Lab2.Core/DeliveryCalculator.cs:line 7
+   at Lab2.Tests.ValidationTests.<>c__DisplayClass4_0.<CalculateCost_WithUndefinedDeliveryType_ThrowsArgumentException>b__0() in <repository>/Lab2.Tests/ValidationTests.cs:line 86
+   at FluentAssertions.Specialized.ActionAssertions.InvokeSubject()
+   at FluentAssertions.Specialized.DelegateAssertions`2.InvokeSubjectWithInterception().
+  Stack Trace:
+     at FluentAssertions.Execution.XUnit2TestFramework.Throw(String message)
+   at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)
+   at FluentAssertions.Execution.DefaultAssertionStrategy.HandleFailure(String message)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(String message, Object[] args)
+   at FluentAssertions.Specialized.DelegateAssertionsBase`2.ThrowInternal[TException](Exception exception, String because, Object[] becauseArgs)
+   at FluentAssertions.Specialized.DelegateAssertions`2.Throw[TException](String because, Object[] becauseArgs)
+   at Lab2.Tests.ValidationTests.CalculateCost_WithUndefinedDeliveryType_ThrowsArgumentException(Int32 type) in <repository>/Lab2.Tests/ValidationTests.cs:line 89
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+[xUnit.net 00:00:00.27]     Lab2.Tests.ValidationTests.CalculateCost_WithUndefinedDeliveryType_ThrowsArgumentException(type: 3) [FAIL]
+[xUnit.net 00:00:00.27]     Lab2.Tests.ValidationTests.CalculateCost_WithNullRequest_ThrowsArgumentException [FAIL]
+[xUnit.net 00:00:00.28]     Lab2.Tests.ValidationTests.CalculateCost_WithInvalidWeight_ThrowsArgumentException(weight: -1) [FAIL]
+[xUnit.net 00:00:00.28]     Lab2.Tests.ValidationTests.CalculateCost_WithInvalidWeight_ThrowsArgumentException(weight: 0) [FAIL]
+[xUnit.net 00:00:00.28]     Lab2.Tests.ValidationTests.CalculateCost_WithInvalidWeight_ThrowsArgumentException(weight: 1000.01) [FAIL]
+  Failed Lab2.Tests.ValidationTests.CalculateCost_WithUndefinedDeliveryType_ThrowsArgumentException(type: 3) [< 1 ms]
+  Error Message:
+   Expected a <System.ArgumentException> to be thrown, but found <System.NotImplementedException>:
+System.NotImplementedException: The method or operation is not implemented.
+   at Lab2.Core.DeliveryCalculator.CalculateCost(DeliveryRequest request) in <repository>/Lab2.Core/DeliveryCalculator.cs:line 7
+   at Lab2.Tests.ValidationTests.<>c__DisplayClass4_0.<CalculateCost_WithUndefinedDeliveryType_ThrowsArgumentException>b__0() in <repository>/Lab2.Tests/ValidationTests.cs:line 86
+   at FluentAssertions.Specialized.ActionAssertions.InvokeSubject()
+   at FluentAssertions.Specialized.DelegateAssertions`2.InvokeSubjectWithInterception().
+  Stack Trace:
+     at FluentAssertions.Execution.XUnit2TestFramework.Throw(String message)
+   at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)
+   at FluentAssertions.Execution.DefaultAssertionStrategy.HandleFailure(String message)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(String message, Object[] args)
+   at FluentAssertions.Specialized.DelegateAssertionsBase`2.ThrowInternal[TException](Exception exception, String because, Object[] becauseArgs)
+   at FluentAssertions.Specialized.DelegateAssertions`2.Throw[TException](String because, Object[] becauseArgs)
+   at Lab2.Tests.ValidationTests.CalculateCost_WithUndefinedDeliveryType_ThrowsArgumentException(Int32 type) in <repository>/Lab2.Tests/ValidationTests.cs:line 89
+   at InvokeStub_ValidationTests.CalculateCost_WithUndefinedDeliveryType_ThrowsArgumentException(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  Failed Lab2.Tests.ValidationTests.CalculateCost_WithNullRequest_ThrowsArgumentException [< 1 ms]
+  Error Message:
+   Expected a <System.ArgumentException> to be thrown, but found <System.NotImplementedException>:
+System.NotImplementedException: The method or operation is not implemented.
+   at Lab2.Core.DeliveryCalculator.CalculateCost(DeliveryRequest request) in <repository>/Lab2.Core/DeliveryCalculator.cs:line 7
+   at Lab2.Tests.ValidationTests.<>c__DisplayClass0_0.<CalculateCost_WithNullRequest_ThrowsArgumentException>b__0() in <repository>/Lab2.Tests/ValidationTests.cs:line 15
+   at FluentAssertions.Specialized.ActionAssertions.InvokeSubject()
+   at FluentAssertions.Specialized.DelegateAssertions`2.InvokeSubjectWithInterception().
+  Stack Trace:
+     at FluentAssertions.Execution.XUnit2TestFramework.Throw(String message)
+   at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)
+   at FluentAssertions.Execution.DefaultAssertionStrategy.HandleFailure(String message)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(String message, Object[] args)
+   at FluentAssertions.Specialized.DelegateAssertionsBase`2.ThrowInternal[TException](Exception exception, String because, Object[] becauseArgs)
+   at FluentAssertions.Specialized.DelegateAssertions`2.Throw[TException](String because, Object[] becauseArgs)
+   at Lab2.Tests.ValidationTests.CalculateCost_WithNullRequest_ThrowsArgumentException() in <repository>/Lab2.Tests/ValidationTests.cs:line 18
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+  Failed Lab2.Tests.ValidationTests.CalculateCost_WithInvalidWeight_ThrowsArgumentException(weight: -1) [1 ms]
+  Error Message:
+   Expected a <System.ArgumentException> to be thrown, but found <System.NotImplementedException>:
+System.NotImplementedException: The method or operation is not implemented.
+   at Lab2.Core.DeliveryCalculator.CalculateCost(DeliveryRequest request) in <repository>/Lab2.Core/DeliveryCalculator.cs:line 7
+   at Lab2.Tests.ValidationTests.<>c__DisplayClass2_0.<CalculateCost_WithInvalidWeight_ThrowsArgumentException>b__0() in <repository>/Lab2.Tests/ValidationTests.cs:line 50
+   at FluentAssertions.Specialized.ActionAssertions.InvokeSubject()
+   at FluentAssertions.Specialized.DelegateAssertions`2.InvokeSubjectWithInterception().
+  Stack Trace:
+     at FluentAssertions.Execution.XUnit2TestFramework.Throw(String message)
+   at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)
+   at FluentAssertions.Execution.DefaultAssertionStrategy.HandleFailure(String message)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(String message, Object[] args)
+   at FluentAssertions.Specialized.DelegateAssertionsBase`2.ThrowInternal[TException](Exception exception, String because, Object[] becauseArgs)
+   at FluentAssertions.Specialized.DelegateAssertions`2.Throw[TException](String because, Object[] becauseArgs)
+   at Lab2.Tests.ValidationTests.CalculateCost_WithInvalidWeight_ThrowsArgumentException(Double weight) in <repository>/Lab2.Tests/ValidationTests.cs:line 53
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+  Failed Lab2.Tests.ValidationTests.CalculateCost_WithInvalidWeight_ThrowsArgumentException(weight: 0) [< 1 ms]
+  Error Message:
+   Expected a <System.ArgumentException> to be thrown, but found <System.NotImplementedException>:
+System.NotImplementedException: The method or operation is not implemented.
+   at Lab2.Core.DeliveryCalculator.CalculateCost(DeliveryRequest request) in <repository>/Lab2.Core/DeliveryCalculator.cs:line 7
+   at Lab2.Tests.ValidationTests.<>c__DisplayClass2_0.<CalculateCost_WithInvalidWeight_ThrowsArgumentException>b__0() in <repository>/Lab2.Tests/ValidationTests.cs:line 50
+   at FluentAssertions.Specialized.ActionAssertions.InvokeSubject()
+   at FluentAssertions.Specialized.DelegateAssertions`2.InvokeSubjectWithInterception().
+  Stack Trace:
+     at FluentAssertions.Execution.XUnit2TestFramework.Throw(String message)
+   at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)
+   at FluentAssertions.Execution.DefaultAssertionStrategy.HandleFailure(String message)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(String message, Object[] args)
+   at FluentAssertions.Specialized.DelegateAssertionsBase`2.ThrowInternal[TException](Exception exception, String because, Object[] becauseArgs)
+   at FluentAssertions.Specialized.DelegateAssertions`2.Throw[TException](String because, Object[] becauseArgs)
+   at Lab2.Tests.ValidationTests.CalculateCost_WithInvalidWeight_ThrowsArgumentException(Double weight) in <repository>/Lab2.Tests/ValidationTests.cs:line 53
+   at InvokeStub_ValidationTests.CalculateCost_WithInvalidWeight_ThrowsArgumentException(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  Failed Lab2.Tests.ValidationTests.CalculateCost_WithInvalidWeight_ThrowsArgumentException(weight: 1000.01) [< 1 ms]
+  Error Message:
+   Expected a <System.ArgumentException> to be thrown, but found <System.NotImplementedException>:
+System.NotImplementedException: The method or operation is not implemented.
+   at Lab2.Core.DeliveryCalculator.CalculateCost(DeliveryRequest request) in <repository>/Lab2.Core/DeliveryCalculator.cs:line 7
+   at Lab2.Tests.ValidationTests.<>c__DisplayClass2_0.<CalculateCost_WithInvalidWeight_ThrowsArgumentException>b__0() in <repository>/Lab2.Tests/ValidationTests.cs:line 50
+   at FluentAssertions.Specialized.ActionAssertions.InvokeSubject()
+   at FluentAssertions.Specialized.DelegateAssertions`2.InvokeSubjectWithInterception().
+  Stack Trace:
+     at FluentAssertions.Execution.XUnit2TestFramework.Throw(String message)
+   at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)
+   at FluentAssertions.Execution.DefaultAssertionStrategy.HandleFailure(String message)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(String message, Object[] args)
+   at FluentAssertions.Specialized.DelegateAssertionsBase`2.ThrowInternal[TException](Exception exception, String because, Object[] becauseArgs)
+   at FluentAssertions.Specialized.DelegateAssertions`2.Throw[TException](String because, Object[] becauseArgs)
+   at Lab2.Tests.ValidationTests.CalculateCost_WithInvalidWeight_ThrowsArgumentException(Double weight) in <repository>/Lab2.Tests/ValidationTests.cs:line 53
+   at InvokeStub_ValidationTests.CalculateCost_WithInvalidWeight_ThrowsArgumentException(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+Results File: <repository>/artifacts/tdd/01-validation-red/results.trx
+
+Failed!  - Failed:    14, Passed:     0, Skipped:     0, Total:    14, Duration: 42 ms - Lab2.Tests.dll (net8.0)
