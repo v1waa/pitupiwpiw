@@ -1,0 +1,460 @@
+  Lab2.Core -> <repository>/Lab2.Core/bin/Debug/net8.0/Lab2.Core.dll
+  Lab2.Tests -> <repository>/Lab2.Tests/bin/Debug/net8.0/Lab2.Tests.dll
+Test run for <repository>/Lab2.Tests/bin/Debug/net8.0/Lab2.Tests.dll (.NETCoreApp,Version=v8.0)
+VSTest version 17.11.1 (x64)
+
+Starting test execution, please wait...
+A total of 1 test files matched the specified pattern.
+[xUnit.net 00:00:00.26]     Lab2.Tests.TariffTests.CalculateCost_WithFragileFlag_AppliesSurchargeAfterTypeAndWeight(type: Express, isFragile: True, expected: 1840) [FAIL]
+[xUnit.net 00:00:00.26]     Lab2.Tests.TariffTests.CalculateCost_WithFragileFlag_AppliesSurchargeAfterTypeAndWeight(type: Standard, isFragile: False, expected: 1100) [FAIL]
+[xUnit.net 00:00:00.26]     Lab2.Tests.TariffTests.CalculateCost_WithFragileFlag_AppliesSurchargeAfterTypeAndWeight(type: Express, isFragile: False, expected: 1600) [FAIL]
+  Failed Lab2.Tests.TariffTests.CalculateCost_WithFragileFlag_AppliesSurchargeAfterTypeAndWeight(type: Express, isFragile: True, expected: 1840) [84 ms]
+  Error Message:
+   Expected result to be 1840M, but found 200M (difference of -1640).
+  Stack Trace:
+     at FluentAssertions.Execution.XUnit2TestFramework.Throw(String message)
+   at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)
+   at FluentAssertions.Execution.DefaultAssertionStrategy.HandleFailure(String message)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(String message, Object[] args)
+   at FluentAssertions.Numeric.NumericAssertions`2.Be(T expected, String because, Object[] becauseArgs)
+   at Lab2.Tests.TariffTests.CalculateCost_WithFragileFlag_AppliesSurchargeAfterTypeAndWeight(DeliveryType type, Boolean isFragile, Int32 expected) in <repository>/Lab2.Tests/TariffTests.cs:line 115
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+  Failed Lab2.Tests.TariffTests.CalculateCost_WithFragileFlag_AppliesSurchargeAfterTypeAndWeight(type: Standard, isFragile: False, expected: 1100) [1 ms]
+  Error Message:
+   Expected result to be 1100M, but found 200M (difference of -900).
+  Stack Trace:
+     at FluentAssertions.Execution.XUnit2TestFramework.Throw(String message)
+   at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)
+   at FluentAssertions.Execution.DefaultAssertionStrategy.HandleFailure(String message)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(String message, Object[] args)
+   at FluentAssertions.Numeric.NumericAssertions`2.Be(T expected, String because, Object[] becauseArgs)
+   at Lab2.Tests.TariffTests.CalculateCost_WithFragileFlag_AppliesSurchargeAfterTypeAndWeight(DeliveryType type, Boolean isFragile, Int32 expected) in <repository>/Lab2.Tests/TariffTests.cs:line 115
+   at InvokeStub_TariffTests.CalculateCost_WithFragileFlag_AppliesSurchargeAfterTypeAndWeight(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  Failed Lab2.Tests.TariffTests.CalculateCost_WithFragileFlag_AppliesSurchargeAfterTypeAndWeight(type: Express, isFragile: False, expected: 1600) [< 1 ms]
+  Error Message:
+   Expected result to be 1600M, but found 200M (difference of -1400).
+  Stack Trace:
+     at FluentAssertions.Execution.XUnit2TestFramework.Throw(String message)
+   at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)
+   at FluentAssertions.Execution.DefaultAssertionStrategy.HandleFailure(String message)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(String message, Object[] args)
+   at FluentAssertions.Numeric.NumericAssertions`2.Be(T expected, String because, Object[] becauseArgs)
+   at Lab2.Tests.TariffTests.CalculateCost_WithFragileFlag_AppliesSurchargeAfterTypeAndWeight(DeliveryType type, Boolean isFragile, Int32 expected) in <repository>/Lab2.Tests/TariffTests.cs:line 115
+   at InvokeStub_TariffTests.CalculateCost_WithFragileFlag_AppliesSurchargeAfterTypeAndWeight(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+[xUnit.net 00:00:00.26]     Lab2.Tests.TariffTests.CalculateCost_WithFragileFlag_AppliesSurchargeAfterTypeAndWeight(type: Overnight, isFragile: False, expected: 2600) [FAIL]
+[xUnit.net 00:00:00.26]     Lab2.Tests.TariffTests.CalculateCost_WithFragileFlag_AppliesSurchargeAfterTypeAndWeight(type: Overnight, isFragile: True, expected: 2990) [FAIL]
+[xUnit.net 00:00:00.26]     Lab2.Tests.TariffTests.CalculateCost_WithFragileFlag_AppliesSurchargeAfterTypeAndWeight(type: Standard, isFragile: True, expected: 1265) [FAIL]
+[xUnit.net 00:00:00.26]     Lab2.Tests.TariffTests.CalculateCost_WithWeightSurchargeBoundaries_ReturnsExpectedCost(weight: 19.989999999999998, expected: 300) [FAIL]
+[xUnit.net 00:00:00.26]     Lab2.Tests.TariffTests.CalculateCost_WithWeightSurchargeBoundaries_ReturnsExpectedCost(weight: 1000, expected: 700) [FAIL]
+[xUnit.net 00:00:00.26]     Lab2.Tests.TariffTests.CalculateCost_WithWeightSurchargeBoundaries_ReturnsExpectedCost(weight: 20.010000000000002, expected: 500) [FAIL]
+[xUnit.net 00:00:00.26]     Lab2.Tests.TariffTests.CalculateCost_WithWeightSurchargeBoundaries_ReturnsExpectedCost(weight: 100.01000000000001, expected: 700) [FAIL]
+  Failed Lab2.Tests.TariffTests.CalculateCost_WithFragileFlag_AppliesSurchargeAfterTypeAndWeight(type: Overnight, isFragile: False, expected: 2600) [< 1 ms]
+  Error Message:
+   Expected result to be 2600M, but found 200M (difference of -2400).
+  Stack Trace:
+     at FluentAssertions.Execution.XUnit2TestFramework.Throw(String message)
+   at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)
+   at FluentAssertions.Execution.DefaultAssertionStrategy.HandleFailure(String message)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(String message, Object[] args)
+   at FluentAssertions.Numeric.NumericAssertions`2.Be(T expected, String because, Object[] becauseArgs)
+   at Lab2.Tests.TariffTests.CalculateCost_WithFragileFlag_AppliesSurchargeAfterTypeAndWeight(DeliveryType type, Boolean isFragile, Int32 expected) in <repository>/Lab2.Tests/TariffTests.cs:line 115
+   at InvokeStub_TariffTests.CalculateCost_WithFragileFlag_AppliesSurchargeAfterTypeAndWeight(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  Failed Lab2.Tests.TariffTests.CalculateCost_WithFragileFlag_AppliesSurchargeAfterTypeAndWeight(type: Overnight, isFragile: True, expected: 2990) [< 1 ms]
+  Error Message:
+   Expected result to be 2990M, but found 200M (difference of -2790).
+  Stack Trace:
+     at FluentAssertions.Execution.XUnit2TestFramework.Throw(String message)
+   at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)
+   at FluentAssertions.Execution.DefaultAssertionStrategy.HandleFailure(String message)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(String message, Object[] args)
+   at FluentAssertions.Numeric.NumericAssertions`2.Be(T expected, String because, Object[] becauseArgs)
+   at Lab2.Tests.TariffTests.CalculateCost_WithFragileFlag_AppliesSurchargeAfterTypeAndWeight(DeliveryType type, Boolean isFragile, Int32 expected) in <repository>/Lab2.Tests/TariffTests.cs:line 115
+   at InvokeStub_TariffTests.CalculateCost_WithFragileFlag_AppliesSurchargeAfterTypeAndWeight(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  Failed Lab2.Tests.TariffTests.CalculateCost_WithFragileFlag_AppliesSurchargeAfterTypeAndWeight(type: Standard, isFragile: True, expected: 1265) [< 1 ms]
+  Error Message:
+   Expected result to be 1265M, but found 200M (difference of -1065).
+  Stack Trace:
+     at FluentAssertions.Execution.XUnit2TestFramework.Throw(String message)
+   at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)
+   at FluentAssertions.Execution.DefaultAssertionStrategy.HandleFailure(String message)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(String message, Object[] args)
+   at FluentAssertions.Numeric.NumericAssertions`2.Be(T expected, String because, Object[] becauseArgs)
+   at Lab2.Tests.TariffTests.CalculateCost_WithFragileFlag_AppliesSurchargeAfterTypeAndWeight(DeliveryType type, Boolean isFragile, Int32 expected) in <repository>/Lab2.Tests/TariffTests.cs:line 115
+   at InvokeStub_TariffTests.CalculateCost_WithFragileFlag_AppliesSurchargeAfterTypeAndWeight(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  Failed Lab2.Tests.TariffTests.CalculateCost_WithWeightSurchargeBoundaries_ReturnsExpectedCost(weight: 19.989999999999998, expected: 300) [< 1 ms]
+  Error Message:
+   Expected result to be 300M, but found 200M (difference of -100).
+  Stack Trace:
+     at FluentAssertions.Execution.XUnit2TestFramework.Throw(String message)
+   at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)
+   at FluentAssertions.Execution.DefaultAssertionStrategy.HandleFailure(String message)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(String message, Object[] args)
+   at FluentAssertions.Numeric.NumericAssertions`2.Be(T expected, String because, Object[] becauseArgs)
+   at Lab2.Tests.TariffTests.CalculateCost_WithWeightSurchargeBoundaries_ReturnsExpectedCost(Double weight, Double expected) in <repository>/Lab2.Tests/TariffTests.cs:line 58
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+  Failed Lab2.Tests.TariffTests.CalculateCost_WithWeightSurchargeBoundaries_ReturnsExpectedCost(weight: 1000, expected: 700) [< 1 ms]
+  Error Message:
+   Expected result to be 700M, but found 200M (difference of -500).
+  Stack Trace:
+     at FluentAssertions.Execution.XUnit2TestFramework.Throw(String message)
+   at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)
+   at FluentAssertions.Execution.DefaultAssertionStrategy.HandleFailure(String message)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(String message, Object[] args)
+   at FluentAssertions.Numeric.NumericAssertions`2.Be(T expected, String because, Object[] becauseArgs)
+   at Lab2.Tests.TariffTests.CalculateCost_WithWeightSurchargeBoundaries_ReturnsExpectedCost(Double weight, Double expected) in <repository>/Lab2.Tests/TariffTests.cs:line 58
+   at InvokeStub_TariffTests.CalculateCost_WithWeightSurchargeBoundaries_ReturnsExpectedCost(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  Failed Lab2.Tests.TariffTests.CalculateCost_WithWeightSurchargeBoundaries_ReturnsExpectedCost(weight: 20.010000000000002, expected: 500) [< 1 ms]
+  Error Message:
+   Expected result to be 500M, but found 200M (difference of -300).
+  Stack Trace:
+     at FluentAssertions.Execution.XUnit2TestFramework.Throw(String message)
+   at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)
+   at FluentAssertions.Execution.DefaultAssertionStrategy.HandleFailure(String message)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(String message, Object[] args)
+   at FluentAssertions.Numeric.NumericAssertions`2.Be(T expected, String because, Object[] becauseArgs)
+   at Lab2.Tests.TariffTests.CalculateCost_WithWeightSurchargeBoundaries_ReturnsExpectedCost(Double weight, Double expected) in <repository>/Lab2.Tests/TariffTests.cs:line 58
+   at InvokeStub_TariffTests.CalculateCost_WithWeightSurchargeBoundaries_ReturnsExpectedCost(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  Failed Lab2.Tests.TariffTests.CalculateCost_WithWeightSurchargeBoundaries_ReturnsExpectedCost(weight: 100.01000000000001, expected: 700) [< 1 ms]
+  Error Message:
+   Expected result to be 700M, but found 200M (difference of -500).
+  Stack Trace:
+     at FluentAssertions.Execution.XUnit2TestFramework.Throw(String message)
+   at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)
+   at FluentAssertions.Execution.DefaultAssertionStrategy.HandleFailure(String message)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(String message, Object[] args)
+   at FluentAssertions.Numeric.NumericAssertions`2.Be(T expected, String because, Object[] becauseArgs)
+   at Lab2.Tests.TariffTests.CalculateCost_WithWeightSurchargeBoundaries_ReturnsExpectedCost(Double weight, Double expected) in <repository>/Lab2.Tests/TariffTests.cs:line 58
+   at InvokeStub_TariffTests.CalculateCost_WithWeightSurchargeBoundaries_ReturnsExpectedCost(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+[xUnit.net 00:00:00.26]     Lab2.Tests.TariffTests.CalculateCost_WithWeightSurchargeBoundaries_ReturnsExpectedCost(weight: 100, expected: 500) [FAIL]
+[xUnit.net 00:00:00.26]     Lab2.Tests.TariffTests.CalculateCost_WithWeightSurchargeBoundaries_ReturnsExpectedCost(weight: 99.989999999999995, expected: 500) [FAIL]
+[xUnit.net 00:00:00.26]     Lab2.Tests.TariffTests.CalculateCost_WithWeightSurchargeBoundaries_ReturnsExpectedCost(weight: 20, expected: 300) [FAIL]
+[xUnit.net 00:00:00.26]     Lab2.Tests.TariffTests.CalculateCost_WithWeightSurchargeBoundaries_ReturnsExpectedCost(weight: 5.0099999999999998, expected: 300) [FAIL]
+[xUnit.net 00:00:00.27]     Lab2.Tests.TariffTests.CalculateCost_WithDistanceTariffBoundaries_ReturnsExpectedCost(distance: 999.99000000000001, expected: 15499.85) [FAIL]
+[xUnit.net 00:00:00.27]     Lab2.Tests.TariffTests.CalculateCost_WithDistanceTariffBoundaries_ReturnsExpectedCost(distance: 100, expected: 2000) [FAIL]
+[xUnit.net 00:00:00.27]     Lab2.Tests.TariffTests.CalculateCost_WithDistanceTariffBoundaries_ReturnsExpectedCost(distance: 99.989999999999995, expected: 1999.8) [FAIL]
+[xUnit.net 00:00:00.27]     Lab2.Tests.TariffTests.CalculateCost_WithDistanceTariffBoundaries_ReturnsExpectedCost(distance: 1000.01, expected: 15500.1) [FAIL]
+[xUnit.net 00:00:00.27]     Lab2.Tests.TariffTests.CalculateCost_WithDistanceTariffBoundaries_ReturnsExpectedCost(distance: 2000, expected: 25500) [FAIL]
+  Failed Lab2.Tests.TariffTests.CalculateCost_WithWeightSurchargeBoundaries_ReturnsExpectedCost(weight: 100, expected: 500) [< 1 ms]
+  Error Message:
+   Expected result to be 500M, but found 200M (difference of -300).
+  Stack Trace:
+     at FluentAssertions.Execution.XUnit2TestFramework.Throw(String message)
+   at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)
+   at FluentAssertions.Execution.DefaultAssertionStrategy.HandleFailure(String message)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(String message, Object[] args)
+   at FluentAssertions.Numeric.NumericAssertions`2.Be(T expected, String because, Object[] becauseArgs)
+   at Lab2.Tests.TariffTests.CalculateCost_WithWeightSurchargeBoundaries_ReturnsExpectedCost(Double weight, Double expected) in <repository>/Lab2.Tests/TariffTests.cs:line 58
+   at InvokeStub_TariffTests.CalculateCost_WithWeightSurchargeBoundaries_ReturnsExpectedCost(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  Failed Lab2.Tests.TariffTests.CalculateCost_WithWeightSurchargeBoundaries_ReturnsExpectedCost(weight: 99.989999999999995, expected: 500) [< 1 ms]
+  Error Message:
+   Expected result to be 500M, but found 200M (difference of -300).
+  Stack Trace:
+     at FluentAssertions.Execution.XUnit2TestFramework.Throw(String message)
+   at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)
+   at FluentAssertions.Execution.DefaultAssertionStrategy.HandleFailure(String message)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(String message, Object[] args)
+   at FluentAssertions.Numeric.NumericAssertions`2.Be(T expected, String because, Object[] becauseArgs)
+   at Lab2.Tests.TariffTests.CalculateCost_WithWeightSurchargeBoundaries_ReturnsExpectedCost(Double weight, Double expected) in <repository>/Lab2.Tests/TariffTests.cs:line 58
+   at InvokeStub_TariffTests.CalculateCost_WithWeightSurchargeBoundaries_ReturnsExpectedCost(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  Failed Lab2.Tests.TariffTests.CalculateCost_WithWeightSurchargeBoundaries_ReturnsExpectedCost(weight: 20, expected: 300) [< 1 ms]
+  Error Message:
+   Expected result to be 300M, but found 200M (difference of -100).
+  Stack Trace:
+     at FluentAssertions.Execution.XUnit2TestFramework.Throw(String message)
+   at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)
+   at FluentAssertions.Execution.DefaultAssertionStrategy.HandleFailure(String message)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(String message, Object[] args)
+   at FluentAssertions.Numeric.NumericAssertions`2.Be(T expected, String because, Object[] becauseArgs)
+   at Lab2.Tests.TariffTests.CalculateCost_WithWeightSurchargeBoundaries_ReturnsExpectedCost(Double weight, Double expected) in <repository>/Lab2.Tests/TariffTests.cs:line 58
+   at InvokeStub_TariffTests.CalculateCost_WithWeightSurchargeBoundaries_ReturnsExpectedCost(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  Failed Lab2.Tests.TariffTests.CalculateCost_WithWeightSurchargeBoundaries_ReturnsExpectedCost(weight: 5.0099999999999998, expected: 300) [< 1 ms]
+  Error Message:
+   Expected result to be 300M, but found 200M (difference of -100).
+  Stack Trace:
+     at FluentAssertions.Execution.XUnit2TestFramework.Throw(String message)
+   at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)
+   at FluentAssertions.Execution.DefaultAssertionStrategy.HandleFailure(String message)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(String message, Object[] args)
+   at FluentAssertions.Numeric.NumericAssertions`2.Be(T expected, String because, Object[] becauseArgs)
+   at Lab2.Tests.TariffTests.CalculateCost_WithWeightSurchargeBoundaries_ReturnsExpectedCost(Double weight, Double expected) in <repository>/Lab2.Tests/TariffTests.cs:line 58
+   at InvokeStub_TariffTests.CalculateCost_WithWeightSurchargeBoundaries_ReturnsExpectedCost(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  Failed Lab2.Tests.TariffTests.CalculateCost_WithDistanceTariffBoundaries_ReturnsExpectedCost(distance: 999.99000000000001, expected: 15499.85) [1 ms]
+  Error Message:
+   Expected result to be 15499.85M because на границах должен применяться правильный тариф, but found 200M (difference of -15299.85).
+  Stack Trace:
+     at FluentAssertions.Execution.XUnit2TestFramework.Throw(String message)
+   at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)
+   at FluentAssertions.Execution.DefaultAssertionStrategy.HandleFailure(String message)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(String message, Object[] args)
+   at FluentAssertions.Numeric.NumericAssertions`2.Be(T expected, String because, Object[] becauseArgs)
+   at Lab2.Tests.TariffTests.CalculateCost_WithDistanceTariffBoundaries_ReturnsExpectedCost(Double distance, Double expected) in <repository>/Lab2.Tests/TariffTests.cs:line 33
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+  Failed Lab2.Tests.TariffTests.CalculateCost_WithDistanceTariffBoundaries_ReturnsExpectedCost(distance: 100, expected: 2000) [1 ms]
+  Error Message:
+   Expected result to be 2000M because на границах должен применяться правильный тариф, but found 200M (difference of -1800).
+  Stack Trace:
+     at FluentAssertions.Execution.XUnit2TestFramework.Throw(String message)
+   at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)
+   at FluentAssertions.Execution.DefaultAssertionStrategy.HandleFailure(String message)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(String message, Object[] args)
+   at FluentAssertions.Numeric.NumericAssertions`2.Be(T expected, String because, Object[] becauseArgs)
+   at Lab2.Tests.TariffTests.CalculateCost_WithDistanceTariffBoundaries_ReturnsExpectedCost(Double distance, Double expected) in <repository>/Lab2.Tests/TariffTests.cs:line 33
+   at InvokeStub_TariffTests.CalculateCost_WithDistanceTariffBoundaries_ReturnsExpectedCost(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  Failed Lab2.Tests.TariffTests.CalculateCost_WithDistanceTariffBoundaries_ReturnsExpectedCost(distance: 99.989999999999995, expected: 1999.8) [< 1 ms]
+  Error Message:
+   Expected result to be 1999.8M because на границах должен применяться правильный тариф, but found 200M (difference of -1799.8).
+  Stack Trace:
+     at FluentAssertions.Execution.XUnit2TestFramework.Throw(String message)
+   at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)
+   at FluentAssertions.Execution.DefaultAssertionStrategy.HandleFailure(String message)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(String message, Object[] args)
+   at FluentAssertions.Numeric.NumericAssertions`2.Be(T expected, String because, Object[] becauseArgs)
+   at Lab2.Tests.TariffTests.CalculateCost_WithDistanceTariffBoundaries_ReturnsExpectedCost(Double distance, Double expected) in <repository>/Lab2.Tests/TariffTests.cs:line 33
+   at InvokeStub_TariffTests.CalculateCost_WithDistanceTariffBoundaries_ReturnsExpectedCost(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  Failed Lab2.Tests.TariffTests.CalculateCost_WithDistanceTariffBoundaries_ReturnsExpectedCost(distance: 1000.01, expected: 15500.1) [< 1 ms]
+  Error Message:
+   Expected result to be 15500.1M because на границах должен применяться правильный тариф, but found 200M (difference of -15300.1).
+  Stack Trace:
+     at FluentAssertions.Execution.XUnit2TestFramework.Throw(String message)
+   at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)
+   at FluentAssertions.Execution.DefaultAssertionStrategy.HandleFailure(String message)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(String message, Object[] args)
+   at FluentAssertions.Numeric.NumericAssertions`2.Be(T expected, String because, Object[] becauseArgs)
+   at Lab2.Tests.TariffTests.CalculateCost_WithDistanceTariffBoundaries_ReturnsExpectedCost(Double distance, Double expected) in <repository>/Lab2.Tests/TariffTests.cs:line 33
+   at InvokeStub_TariffTests.CalculateCost_WithDistanceTariffBoundaries_ReturnsExpectedCost(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  Failed Lab2.Tests.TariffTests.CalculateCost_WithDistanceTariffBoundaries_ReturnsExpectedCost(distance: 2000, expected: 25500) [< 1 ms]
+  Error Message:
+   Expected result to be 25500M because на границах должен применяться правильный тариф, but found 200M (difference of -25300).
+  Stack Trace:
+     at FluentAssertions.Execution.XUnit2TestFramework.Throw(String message)
+   at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)
+   at FluentAssertions.Execution.DefaultAssertionStrategy.HandleFailure(String message)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(String message, Object[] args)
+   at FluentAssertions.Numeric.NumericAssertions`2.Be(T expected, String because, Object[] becauseArgs)
+   at Lab2.Tests.TariffTests.CalculateCost_WithDistanceTariffBoundaries_ReturnsExpectedCost(Double distance, Double expected) in <repository>/Lab2.Tests/TariffTests.cs:line 33
+   at InvokeStub_TariffTests.CalculateCost_WithDistanceTariffBoundaries_ReturnsExpectedCost(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+[xUnit.net 00:00:00.27]     Lab2.Tests.TariffTests.CalculateCost_WithDistanceTariffBoundaries_ReturnsExpectedCost(distance: 100.01000000000001, expected: 2000.1500000000001) [FAIL]
+[xUnit.net 00:00:00.27]     Lab2.Tests.TariffTests.CalculateCost_WithDistanceTariffBoundaries_ReturnsExpectedCost(distance: 50, expected: 1000) [FAIL]
+[xUnit.net 00:00:00.27]     Lab2.Tests.TariffTests.CalculateCost_WithDistanceTariffBoundaries_ReturnsExpectedCost(distance: 500, expected: 8000) [FAIL]
+[xUnit.net 00:00:00.27]     Lab2.Tests.TariffTests.CalculateCost_WithDistanceTariffBoundaries_ReturnsExpectedCost(distance: 10.01, expected: 200.19999999999999) [FAIL]
+[xUnit.net 00:00:00.27]     Lab2.Tests.TariffTests.CalculateCost_WithDistanceTariffBoundaries_ReturnsExpectedCost(distance: 1000, expected: 15500) [FAIL]
+[xUnit.net 00:00:00.27]     Lab2.Tests.TariffTests.CalculateCost_WithDeliveryType_ReturnsMultipliedBaseTariff(type: Standard, expected: 1000) [FAIL]
+  Failed Lab2.Tests.TariffTests.CalculateCost_WithDistanceTariffBoundaries_ReturnsExpectedCost(distance: 100.01000000000001, expected: 2000.1500000000001) [< 1 ms]
+  Error Message:
+   Expected result to be 2000.15M because на границах должен применяться правильный тариф, but found 200M (difference of -1800.15).
+  Stack Trace:
+     at FluentAssertions.Execution.XUnit2TestFramework.Throw(String message)
+   at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)
+   at FluentAssertions.Execution.DefaultAssertionStrategy.HandleFailure(String message)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(String message, Object[] args)
+   at FluentAssertions.Numeric.NumericAssertions`2.Be(T expected, String because, Object[] becauseArgs)
+   at Lab2.Tests.TariffTests.CalculateCost_WithDistanceTariffBoundaries_ReturnsExpectedCost(Double distance, Double expected) in <repository>/Lab2.Tests/TariffTests.cs:line 33
+   at InvokeStub_TariffTests.CalculateCost_WithDistanceTariffBoundaries_ReturnsExpectedCost(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  Failed Lab2.Tests.TariffTests.CalculateCost_WithDistanceTariffBoundaries_ReturnsExpectedCost(distance: 50, expected: 1000) [< 1 ms]
+  Error Message:
+   Expected result to be 1000M because на границах должен применяться правильный тариф, but found 200M (difference of -800).
+  Stack Trace:
+     at FluentAssertions.Execution.XUnit2TestFramework.Throw(String message)
+   at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)
+   at FluentAssertions.Execution.DefaultAssertionStrategy.HandleFailure(String message)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(String message, Object[] args)
+   at FluentAssertions.Numeric.NumericAssertions`2.Be(T expected, String because, Object[] becauseArgs)
+   at Lab2.Tests.TariffTests.CalculateCost_WithDistanceTariffBoundaries_ReturnsExpectedCost(Double distance, Double expected) in <repository>/Lab2.Tests/TariffTests.cs:line 33
+   at InvokeStub_TariffTests.CalculateCost_WithDistanceTariffBoundaries_ReturnsExpectedCost(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  Failed Lab2.Tests.TariffTests.CalculateCost_WithDistanceTariffBoundaries_ReturnsExpectedCost(distance: 500, expected: 8000) [< 1 ms]
+  Error Message:
+   Expected result to be 8000M because на границах должен применяться правильный тариф, but found 200M (difference of -7800).
+  Stack Trace:
+     at FluentAssertions.Execution.XUnit2TestFramework.Throw(String message)
+   at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)
+   at FluentAssertions.Execution.DefaultAssertionStrategy.HandleFailure(String message)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(String message, Object[] args)
+   at FluentAssertions.Numeric.NumericAssertions`2.Be(T expected, String because, Object[] becauseArgs)
+   at Lab2.Tests.TariffTests.CalculateCost_WithDistanceTariffBoundaries_ReturnsExpectedCost(Double distance, Double expected) in <repository>/Lab2.Tests/TariffTests.cs:line 33
+   at InvokeStub_TariffTests.CalculateCost_WithDistanceTariffBoundaries_ReturnsExpectedCost(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  Failed Lab2.Tests.TariffTests.CalculateCost_WithDistanceTariffBoundaries_ReturnsExpectedCost(distance: 10.01, expected: 200.19999999999999) [< 1 ms]
+  Error Message:
+   Expected result to be 200.2M because на границах должен применяться правильный тариф, but found 200M (difference of -0.2).
+  Stack Trace:
+     at FluentAssertions.Execution.XUnit2TestFramework.Throw(String message)
+   at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)
+   at FluentAssertions.Execution.DefaultAssertionStrategy.HandleFailure(String message)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(String message, Object[] args)
+   at FluentAssertions.Numeric.NumericAssertions`2.Be(T expected, String because, Object[] becauseArgs)
+   at Lab2.Tests.TariffTests.CalculateCost_WithDistanceTariffBoundaries_ReturnsExpectedCost(Double distance, Double expected) in <repository>/Lab2.Tests/TariffTests.cs:line 33
+   at InvokeStub_TariffTests.CalculateCost_WithDistanceTariffBoundaries_ReturnsExpectedCost(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  Failed Lab2.Tests.TariffTests.CalculateCost_WithDistanceTariffBoundaries_ReturnsExpectedCost(distance: 1000, expected: 15500) [< 1 ms]
+  Error Message:
+   Expected result to be 15500M because на границах должен применяться правильный тариф, but found 200M (difference of -15300).
+  Stack Trace:
+     at FluentAssertions.Execution.XUnit2TestFramework.Throw(String message)
+   at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)
+   at FluentAssertions.Execution.DefaultAssertionStrategy.HandleFailure(String message)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(String message, Object[] args)
+   at FluentAssertions.Numeric.NumericAssertions`2.Be(T expected, String because, Object[] becauseArgs)
+   at Lab2.Tests.TariffTests.CalculateCost_WithDistanceTariffBoundaries_ReturnsExpectedCost(Double distance, Double expected) in <repository>/Lab2.Tests/TariffTests.cs:line 33
+   at InvokeStub_TariffTests.CalculateCost_WithDistanceTariffBoundaries_ReturnsExpectedCost(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  Failed Lab2.Tests.TariffTests.CalculateCost_WithDeliveryType_ReturnsMultipliedBaseTariff(type: Standard, expected: 1000) [< 1 ms]
+  Error Message:
+   Expected result to be 1000M, but found 200M (difference of -800).
+  Stack Trace:
+     at FluentAssertions.Execution.XUnit2TestFramework.Throw(String message)
+   at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)
+   at FluentAssertions.Execution.DefaultAssertionStrategy.HandleFailure(String message)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(String message, Object[] args)
+   at FluentAssertions.Numeric.NumericAssertions`2.Be(T expected, String because, Object[] becauseArgs)
+   at Lab2.Tests.TariffTests.CalculateCost_WithDeliveryType_ReturnsMultipliedBaseTariff(DeliveryType type, Int32 expected) in <repository>/Lab2.Tests/TariffTests.cs:line 76
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+[xUnit.net 00:00:00.27]     Lab2.Tests.TariffTests.CalculateCost_WithDeliveryType_ReturnsMultipliedBaseTariff(type: Express, expected: 1500) [FAIL]
+[xUnit.net 00:00:00.27]     Lab2.Tests.TariffTests.CalculateCost_WithDeliveryType_ReturnsMultipliedBaseTariff(type: Overnight, expected: 2500) [FAIL]
+[xUnit.net 00:00:00.27]     Lab2.Tests.TariffTests.CalculateCost_WithWeightAndDeliveryType_MultipliesOnlyBaseTariff(type: Overnight, expected: 2600) [FAIL]
+[xUnit.net 00:00:00.27]     Lab2.Tests.TariffTests.CalculateCost_WithWeightAndDeliveryType_MultipliesOnlyBaseTariff(type: Express, expected: 1600) [FAIL]
+[xUnit.net 00:00:00.27]     Lab2.Tests.TariffTests.CalculateCost_WithWeightAndDeliveryType_MultipliesOnlyBaseTariff(type: Standard, expected: 1100) [FAIL]
+  Failed Lab2.Tests.TariffTests.CalculateCost_WithDeliveryType_ReturnsMultipliedBaseTariff(type: Express, expected: 1500) [< 1 ms]
+  Error Message:
+   Expected result to be 1500M, but found 200M (difference of -1300).
+  Stack Trace:
+     at FluentAssertions.Execution.XUnit2TestFramework.Throw(String message)
+   at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)
+   at FluentAssertions.Execution.DefaultAssertionStrategy.HandleFailure(String message)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(String message, Object[] args)
+   at FluentAssertions.Numeric.NumericAssertions`2.Be(T expected, String because, Object[] becauseArgs)
+   at Lab2.Tests.TariffTests.CalculateCost_WithDeliveryType_ReturnsMultipliedBaseTariff(DeliveryType type, Int32 expected) in <repository>/Lab2.Tests/TariffTests.cs:line 76
+   at InvokeStub_TariffTests.CalculateCost_WithDeliveryType_ReturnsMultipliedBaseTariff(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  Failed Lab2.Tests.TariffTests.CalculateCost_WithDeliveryType_ReturnsMultipliedBaseTariff(type: Overnight, expected: 2500) [< 1 ms]
+  Error Message:
+   Expected result to be 2500M, but found 200M (difference of -2300).
+  Stack Trace:
+     at FluentAssertions.Execution.XUnit2TestFramework.Throw(String message)
+   at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)
+   at FluentAssertions.Execution.DefaultAssertionStrategy.HandleFailure(String message)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(String message, Object[] args)
+   at FluentAssertions.Numeric.NumericAssertions`2.Be(T expected, String because, Object[] becauseArgs)
+   at Lab2.Tests.TariffTests.CalculateCost_WithDeliveryType_ReturnsMultipliedBaseTariff(DeliveryType type, Int32 expected) in <repository>/Lab2.Tests/TariffTests.cs:line 76
+   at InvokeStub_TariffTests.CalculateCost_WithDeliveryType_ReturnsMultipliedBaseTariff(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  Failed Lab2.Tests.TariffTests.CalculateCost_WithWeightAndDeliveryType_MultipliesOnlyBaseTariff(type: Overnight, expected: 2600) [< 1 ms]
+  Error Message:
+   Expected result to be 2600M because коэффициент доставки не умножает надбавку за вес, but found 200M (difference of -2400).
+  Stack Trace:
+     at FluentAssertions.Execution.XUnit2TestFramework.Throw(String message)
+   at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)
+   at FluentAssertions.Execution.DefaultAssertionStrategy.HandleFailure(String message)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(String message, Object[] args)
+   at FluentAssertions.Numeric.NumericAssertions`2.Be(T expected, String because, Object[] becauseArgs)
+   at Lab2.Tests.TariffTests.CalculateCost_WithWeightAndDeliveryType_MultipliesOnlyBaseTariff(DeliveryType type, Int32 expected) in <repository>/Lab2.Tests/TariffTests.cs:line 94
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+  Failed Lab2.Tests.TariffTests.CalculateCost_WithWeightAndDeliveryType_MultipliesOnlyBaseTariff(type: Express, expected: 1600) [< 1 ms]
+  Error Message:
+   Expected result to be 1600M because коэффициент доставки не умножает надбавку за вес, but found 200M (difference of -1400).
+  Stack Trace:
+     at FluentAssertions.Execution.XUnit2TestFramework.Throw(String message)
+   at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)
+   at FluentAssertions.Execution.DefaultAssertionStrategy.HandleFailure(String message)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(String message, Object[] args)
+   at FluentAssertions.Numeric.NumericAssertions`2.Be(T expected, String because, Object[] becauseArgs)
+   at Lab2.Tests.TariffTests.CalculateCost_WithWeightAndDeliveryType_MultipliesOnlyBaseTariff(DeliveryType type, Int32 expected) in <repository>/Lab2.Tests/TariffTests.cs:line 94
+   at InvokeStub_TariffTests.CalculateCost_WithWeightAndDeliveryType_MultipliesOnlyBaseTariff(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  Failed Lab2.Tests.TariffTests.CalculateCost_WithWeightAndDeliveryType_MultipliesOnlyBaseTariff(type: Standard, expected: 1100) [< 1 ms]
+  Error Message:
+   Expected result to be 1100M because коэффициент доставки не умножает надбавку за вес, but found 200M (difference of -900).
+  Stack Trace:
+     at FluentAssertions.Execution.XUnit2TestFramework.Throw(String message)
+   at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)
+   at FluentAssertions.Execution.DefaultAssertionStrategy.HandleFailure(String message)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(String message, Object[] args)
+   at FluentAssertions.Numeric.NumericAssertions`2.Be(T expected, String because, Object[] becauseArgs)
+   at Lab2.Tests.TariffTests.CalculateCost_WithWeightAndDeliveryType_MultipliesOnlyBaseTariff(DeliveryType type, Int32 expected) in <repository>/Lab2.Tests/TariffTests.cs:line 94
+   at InvokeStub_TariffTests.CalculateCost_WithWeightAndDeliveryType_MultipliesOnlyBaseTariff(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+Results File: <repository>/artifacts/tdd/02-tariffs-red/results.trx
+
+Failed!  - Failed:    30, Passed:    19, Skipped:     0, Total:    49, Duration: 95 ms - Lab2.Tests.dll (net8.0)

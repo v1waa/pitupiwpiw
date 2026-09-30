@@ -28,5 +28,15 @@
     "exit_code": 0,
     "valid": true,
     "command": "dotnet test Lab2.sln --no-restore --logger trx"
+  },
+  {
+    "stage": "02-tariffs-red",
+    "expected": "red",
+    "total": 49,
+    "passed": 19,
+    "failed": 30,
+    "exit_code": 1,
+    "valid": true,
+    "command": "dotnet test Lab2.sln --no-restore --logger trx"
   }
 ]
