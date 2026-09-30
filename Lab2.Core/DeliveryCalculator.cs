@@ -48,6 +48,6 @@ public sealed class DeliveryCalculator
         if (request.IsInsured && request.DeclaredValue > 0m)
             total += Math.Max(100m, request.DeclaredValue * 0.02m);
 
-        return total;
+        return Math.Min(50000m, total);
     }
 }
