@@ -1,0 +1,24 @@
+Summary
+  Generated on: 09/30/2026 - 08:35:11
+  Coverage date: 09/30/2026 - 08:35:10
+  Parser: MultiReport (2x Cobertura)
+  Assemblies: 1
+  Classes: 2
+  Files: 2
+  Line coverage: 82%
+  Covered lines: 32
+  Uncovered lines: 7
+  Coverable lines: 39
+  Total lines: 61
+  Branch coverage: 75% (21 of 28)
+  Covered branches: 21
+  Total branches: 28
+  Method coverage: 100% (7 of 7)
+  Full method coverage: 85.7% (6 of 7)
+  Covered methods: 7
+  Fully covered methods: 6
+  Total methods: 7
+
+Lab2.Core                          82%
+  Lab2.Core.DeliveryCalculator   78.7%
+  Lab2.Core.DeliveryRequest       100%

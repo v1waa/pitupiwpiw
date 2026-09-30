@@ -32,7 +32,7 @@ public class InsuranceTests
     }
 
     [Fact]
-    public void CalculateCost_WithAllSurcharges_AddsInsuranceAfterFragileSurcharge()
+    public void CalculateCost_WithAllSurcharges_AddsInsuranceLast()
     {
         // ===== ARRANGE =====
         var calculator = new DeliveryCalculator();

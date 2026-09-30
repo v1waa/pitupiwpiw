@@ -25,15 +25,15 @@ public class LimitAndQualityTests
     }
 
     [Theory]
-    [InlineData(DeliveryType.Standard, false, false)]
-    [InlineData(DeliveryType.Express, false, false)]
-    [InlineData(DeliveryType.Overnight, true, true)]
-    public void CalculateCost_WithMaximumDistanceAndWeight_Returns50000(
-        DeliveryType type, bool isFragile, bool isInsured)
+    [InlineData(DeliveryType.Standard, false, false, 1)]
+    [InlineData(DeliveryType.Express, false, false, 1000)]
+    [InlineData(DeliveryType.Overnight, true, true, 1000)]
+    public void CalculateCost_WithMaximumDistance_Returns50000(
+        DeliveryType type, bool isFragile, bool isInsured, int weight)
     {
         // ===== ARRANGE =====
         var calculator = new DeliveryCalculator();
-        var request = TestRequests.Create(5000m, 1000m, type, isFragile, isInsured, 10000m);
+        var request = TestRequests.Create(5000m, weight, type, isFragile, isInsured, 10000m);
 
         // ===== ACT =====
         decimal result = calculator.CalculateCost(request);
