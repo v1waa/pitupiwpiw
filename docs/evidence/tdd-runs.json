@@ -48,5 +48,15 @@
     "exit_code": 0,
     "valid": true,
     "command": "dotnet test Lab2.sln --no-restore --logger trx"
+  },
+  {
+    "stage": "03-insurance-red",
+    "expected": "red",
+    "total": 64,
+    "passed": 56,
+    "failed": 8,
+    "exit_code": 1,
+    "valid": true,
+    "command": "dotnet test Lab2.sln --no-restore --logger trx"
   }
 ]

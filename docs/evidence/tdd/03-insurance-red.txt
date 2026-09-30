@@ -1,0 +1,130 @@
+  Lab2.Core -> <repository>/Lab2.Core/bin/Debug/net8.0/Lab2.Core.dll
+  Lab2.Tests -> <repository>/Lab2.Tests/bin/Debug/net8.0/Lab2.Tests.dll
+Test run for <repository>/Lab2.Tests/bin/Debug/net8.0/Lab2.Tests.dll (.NETCoreApp,Version=v8.0)
+VSTest version 17.11.1 (x64)
+
+Starting test execution, please wait...
+A total of 1 test files matched the specified pattern.
+[xUnit.net 00:00:00.22]     Lab2.Tests.InsuranceTests.CalculateCost_WithFragileAndInsuranceFlagCombinations_ReturnsExpectedCost(isFragile: True, isInsured: True, expected: 430) [FAIL]
+[xUnit.net 00:00:00.22]     Lab2.Tests.InsuranceTests.CalculateCost_WithFragileAndInsuranceFlagCombinations_ReturnsExpectedCost(isFragile: False, isInsured: True, expected: 400) [FAIL]
+[xUnit.net 00:00:00.23]     Lab2.Tests.InsuranceTests.CalculateCost_WithInsuranceConditions_ReturnsExpectedCost(isInsured: True, declaredValue: 5000, expected: 300) [FAIL]
+  Failed Lab2.Tests.InsuranceTests.CalculateCost_WithFragileAndInsuranceFlagCombinations_ReturnsExpectedCost(isFragile: True, isInsured: True, expected: 430) [74 ms]
+  Error Message:
+   Expected result to be 430M, but found 230.00M (difference of -200.00).
+  Stack Trace:
+     at FluentAssertions.Execution.XUnit2TestFramework.Throw(String message)
+   at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)
+   at FluentAssertions.Execution.DefaultAssertionStrategy.HandleFailure(String message)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(String message, Object[] args)
+   at FluentAssertions.Numeric.NumericAssertions`2.Be(T expected, String because, Object[] becauseArgs)
+   at Lab2.Tests.InsuranceTests.CalculateCost_WithFragileAndInsuranceFlagCombinations_ReturnsExpectedCost(Boolean isFragile, Boolean isInsured, Int32 expected) in <repository>/Lab2.Tests/InsuranceTests.cs:line 66
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+  Failed Lab2.Tests.InsuranceTests.CalculateCost_WithFragileAndInsuranceFlagCombinations_ReturnsExpectedCost(isFragile: False, isInsured: True, expected: 400) [1 ms]
+  Error Message:
+   Expected result to be 400M, but found 200M (difference of -200).
+  Stack Trace:
+     at FluentAssertions.Execution.XUnit2TestFramework.Throw(String message)
+   at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)
+   at FluentAssertions.Execution.DefaultAssertionStrategy.HandleFailure(String message)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(String message, Object[] args)
+   at FluentAssertions.Numeric.NumericAssertions`2.Be(T expected, String because, Object[] becauseArgs)
+   at Lab2.Tests.InsuranceTests.CalculateCost_WithFragileAndInsuranceFlagCombinations_ReturnsExpectedCost(Boolean isFragile, Boolean isInsured, Int32 expected) in <repository>/Lab2.Tests/InsuranceTests.cs:line 66
+   at InvokeStub_InsuranceTests.CalculateCost_WithFragileAndInsuranceFlagCombinations_ReturnsExpectedCost(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  Failed Lab2.Tests.InsuranceTests.CalculateCost_WithInsuranceConditions_ReturnsExpectedCost(isInsured: True, declaredValue: 5000, expected: 300) [< 1 ms]
+  Error Message:
+   Expected result to be 300M because страховка требует флаг и положительную стоимость, but found 200M (difference of -100).
+  Stack Trace:
+     at FluentAssertions.Execution.XUnit2TestFramework.Throw(String message)
+   at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)
+   at FluentAssertions.Execution.DefaultAssertionStrategy.HandleFailure(String message)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(String message, Object[] args)
+   at FluentAssertions.Numeric.NumericAssertions`2.Be(T expected, String because, Object[] becauseArgs)
+   at Lab2.Tests.InsuranceTests.CalculateCost_WithInsuranceConditions_ReturnsExpectedCost(Boolean isInsured, Double declaredValue, Double expected) in <repository>/Lab2.Tests/InsuranceTests.cs:line 31
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+[xUnit.net 00:00:00.23]     Lab2.Tests.InsuranceTests.CalculateCost_WithInsuranceConditions_ReturnsExpectedCost(isInsured: True, declaredValue: 10000, expected: 400) [FAIL]
+[xUnit.net 00:00:00.23]     Lab2.Tests.InsuranceTests.CalculateCost_WithInsuranceConditions_ReturnsExpectedCost(isInsured: True, declaredValue: 5000.0100000000002, expected: 300.00020000000001) [FAIL]
+[xUnit.net 00:00:00.23]     Lab2.Tests.InsuranceTests.CalculateCost_WithInsuranceConditions_ReturnsExpectedCost(isInsured: True, declaredValue: 0.01, expected: 300) [FAIL]
+[xUnit.net 00:00:00.23]     Lab2.Tests.InsuranceTests.CalculateCost_WithInsuranceConditions_ReturnsExpectedCost(isInsured: True, declaredValue: 4999.9899999999998, expected: 300) [FAIL]
+[xUnit.net 00:00:00.23]     Lab2.Tests.InsuranceTests.CalculateCost_WithAllSurcharges_AddsInsuranceAfterFragileSurcharge [FAIL]
+  Failed Lab2.Tests.InsuranceTests.CalculateCost_WithInsuranceConditions_ReturnsExpectedCost(isInsured: True, declaredValue: 10000, expected: 400) [< 1 ms]
+  Error Message:
+   Expected result to be 400M because страховка требует флаг и положительную стоимость, but found 200M (difference of -200).
+  Stack Trace:
+     at FluentAssertions.Execution.XUnit2TestFramework.Throw(String message)
+   at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)
+   at FluentAssertions.Execution.DefaultAssertionStrategy.HandleFailure(String message)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(String message, Object[] args)
+   at FluentAssertions.Numeric.NumericAssertions`2.Be(T expected, String because, Object[] becauseArgs)
+   at Lab2.Tests.InsuranceTests.CalculateCost_WithInsuranceConditions_ReturnsExpectedCost(Boolean isInsured, Double declaredValue, Double expected) in <repository>/Lab2.Tests/InsuranceTests.cs:line 31
+   at InvokeStub_InsuranceTests.CalculateCost_WithInsuranceConditions_ReturnsExpectedCost(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  Failed Lab2.Tests.InsuranceTests.CalculateCost_WithInsuranceConditions_ReturnsExpectedCost(isInsured: True, declaredValue: 5000.0100000000002, expected: 300.00020000000001) [< 1 ms]
+  Error Message:
+   Expected result to be 300.0002M because страховка требует флаг и положительную стоимость, but found 200M (difference of -100.0002).
+  Stack Trace:
+     at FluentAssertions.Execution.XUnit2TestFramework.Throw(String message)
+   at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)
+   at FluentAssertions.Execution.DefaultAssertionStrategy.HandleFailure(String message)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(String message, Object[] args)
+   at FluentAssertions.Numeric.NumericAssertions`2.Be(T expected, String because, Object[] becauseArgs)
+   at Lab2.Tests.InsuranceTests.CalculateCost_WithInsuranceConditions_ReturnsExpectedCost(Boolean isInsured, Double declaredValue, Double expected) in <repository>/Lab2.Tests/InsuranceTests.cs:line 31
+   at InvokeStub_InsuranceTests.CalculateCost_WithInsuranceConditions_ReturnsExpectedCost(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  Failed Lab2.Tests.InsuranceTests.CalculateCost_WithInsuranceConditions_ReturnsExpectedCost(isInsured: True, declaredValue: 0.01, expected: 300) [< 1 ms]
+  Error Message:
+   Expected result to be 300M because страховка требует флаг и положительную стоимость, but found 200M (difference of -100).
+  Stack Trace:
+     at FluentAssertions.Execution.XUnit2TestFramework.Throw(String message)
+   at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)
+   at FluentAssertions.Execution.DefaultAssertionStrategy.HandleFailure(String message)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(String message, Object[] args)
+   at FluentAssertions.Numeric.NumericAssertions`2.Be(T expected, String because, Object[] becauseArgs)
+   at Lab2.Tests.InsuranceTests.CalculateCost_WithInsuranceConditions_ReturnsExpectedCost(Boolean isInsured, Double declaredValue, Double expected) in <repository>/Lab2.Tests/InsuranceTests.cs:line 31
+   at InvokeStub_InsuranceTests.CalculateCost_WithInsuranceConditions_ReturnsExpectedCost(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  Failed Lab2.Tests.InsuranceTests.CalculateCost_WithInsuranceConditions_ReturnsExpectedCost(isInsured: True, declaredValue: 4999.9899999999998, expected: 300) [< 1 ms]
+  Error Message:
+   Expected result to be 300M because страховка требует флаг и положительную стоимость, but found 200M (difference of -100).
+  Stack Trace:
+     at FluentAssertions.Execution.XUnit2TestFramework.Throw(String message)
+   at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)
+   at FluentAssertions.Execution.DefaultAssertionStrategy.HandleFailure(String message)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(String message, Object[] args)
+   at FluentAssertions.Numeric.NumericAssertions`2.Be(T expected, String because, Object[] becauseArgs)
+   at Lab2.Tests.InsuranceTests.CalculateCost_WithInsuranceConditions_ReturnsExpectedCost(Boolean isInsured, Double declaredValue, Double expected) in <repository>/Lab2.Tests/InsuranceTests.cs:line 31
+   at InvokeStub_InsuranceTests.CalculateCost_WithInsuranceConditions_ReturnsExpectedCost(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  Failed Lab2.Tests.InsuranceTests.CalculateCost_WithAllSurcharges_AddsInsuranceAfterFragileSurcharge [< 1 ms]
+  Error Message:
+   Expected result to be 2040M because (1000 × 1,5 + 100) × 1,15 + 10000 × 0,02 = 2040, but found 1840.000M (difference of -200.000).
+  Stack Trace:
+     at FluentAssertions.Execution.XUnit2TestFramework.Throw(String message)
+   at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)
+   at FluentAssertions.Execution.DefaultAssertionStrategy.HandleFailure(String message)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(String message, Object[] args)
+   at FluentAssertions.Numeric.NumericAssertions`2.Be(T expected, String because, Object[] becauseArgs)
+   at Lab2.Tests.InsuranceTests.CalculateCost_WithAllSurcharges_AddsInsuranceAfterFragileSurcharge() in <repository>/Lab2.Tests/InsuranceTests.cs:line 46
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+Results File: <repository>/artifacts/tdd/03-insurance-red/results.trx
+
+Failed!  - Failed:     8, Passed:    56, Skipped:     0, Total:    64, Duration: 70 ms - Lab2.Tests.dll (net8.0)
